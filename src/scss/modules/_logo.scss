@@ -1,0 +1,13 @@
+.logo{
+  text-align: center;
+}
+.geen {
+    box-shadow: none;
+    width: 26rem;
+    margin-top: 2rem;
+}
+.alpha{
+  @include mq(large){
+    float: left;
+  }
+}

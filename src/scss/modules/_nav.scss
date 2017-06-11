@@ -1,0 +1,65 @@
+.nav{
+  position: fixed;
+  background-color: darken($white, 2%);
+  border-left: 1px solid darken($white, 4%);
+  height: 100%;
+  width: 80%;
+  top: 0;
+  right: -80%;
+  @extend %transition;
+  @include mq(large){
+    top: auto;
+    right: auto;
+    width: auto;
+    height: auto;
+    position: static;
+    background-color: transparent;
+    border: none;
+    float: right;
+  }
+  @include e(container){
+    @extend %transition;
+    margin-top: 10rem;
+    @include mq(large){
+      display: flex;
+    }
+  }
+  @include e(item){
+    width: 100%;
+    text-align: center;
+  }
+  @include e(link){
+    @extend %link;
+    @extend %transition;
+    color: $color-primary;
+    padding: 0 em(16px);
+    display: block;
+    width: 100%;
+    &:hover{
+      color: lighten($color-primary, 30%);
+    }
+    @include m(geel){
+      @extend %link;
+      @extend %transition;
+      color: $sycamore;
+      padding: 0 em(16px);
+      display: block;
+      width: 100%;
+      &:hover{
+        color: lighten($sycamore, 10%);
+      }
+    }
+    @include m(rood){
+      @extend %link;
+      @extend %transition;
+      color: $red;
+      padding: 0 em(16px);
+      display: block;
+      width: 100%;
+      &:hover{
+        color: lighten($red, 10%);
+      }
+    }
+  }
+
+}

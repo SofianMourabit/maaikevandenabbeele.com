@@ -1,0 +1,71 @@
+/* =================================
+Base Element Styles
+==================================== */
+* {
+  box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+  color: $color-primary;
+  font-family: $font-family--secondary;
+  line-height: $base__line;
+  background-color: $white;
+  left: 0;
+  @extend %transition;
+}
+
+// Text
+h1, h2, h3 {
+  font-family: $font-family--primary;
+  color: $color-primary;
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary;
+}
+a:focus{
+  outline: none;
+}
+
+p {
+  font-family: $font-family--secondary;
+  font-size: em(16px);
+  line-height: $base__line;
+  color: $color-secondary;
+}
+
+// Lists
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// Images
+
+img {
+    // box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+// Form elements
+fieldset, textarea, input{
+  border: none;
+}
+textarea {
+  resize: none;
+}
+
+// Button
+
+input, textarea, button {
+  outline: 0;
+}

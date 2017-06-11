@@ -1,0 +1,9 @@
+.custom{
+  @include e(foto){
+    @include m(down){
+      @include mq(medium){
+        margin-top: 15rem;
+      }
+    }
+  }
+}

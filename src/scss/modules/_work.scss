@@ -1,0 +1,11 @@
+.work {
+  margin: 5rem auto 0;
+  // display: flex;
+  // flex-flow: row wrap;
+  // width: 90%;
+  // margin: 0 auto;
+  // justify-content: space-around;
+  @include e(title){
+    @extend %heading;
+  }
+}

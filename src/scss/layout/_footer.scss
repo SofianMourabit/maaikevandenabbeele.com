@@ -1,0 +1,20 @@
+.footer {
+  text-align: center;
+  margin-top: 10rem;
+  @include mq(medium){
+    max-width: 50%;
+    margin: 10rem auto 0;
+  }
+  @include e(link){
+    @include mq(small){
+      display: block;
+    }
+    color: $color-primary;
+    font-size: 1.6rem;
+    padding: 3rem;
+    font-family: $font-family--secondary ;
+    &:hover {
+      color: $red;
+    }
+  }
+}

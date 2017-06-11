@@ -1,0 +1,33 @@
+/* =================================
+Helper classes
+==================================== */
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+// Center alignment
+
+%center-align {
+	text-align: center;
+}
+
+
+// Custom transition effects
+
+%transition{
+  transition: all .4s cubic-bezier(0,.65,.63,.74);
+}
+
+
+// Honeypot css class
+.honey{
+  display: none;
+}

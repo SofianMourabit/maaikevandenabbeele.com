@@ -1,0 +1,19 @@
+.about{
+  margin: 5rem auto 0;
+  @include mq(medium){
+    width: 90%;
+  }
+
+  @include e(text){
+    p{
+      margin: 6rem 4rem 0rem 4rem;
+      font-weight: lighter;
+      font-family: $font-family--secondary;
+      font-size: 1.7rem;
+      line-height: 2.5rem;
+      color: $color-secondary;
+    }
+  }
+
+
+}
