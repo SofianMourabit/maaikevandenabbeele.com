@@ -1,0 +1,447 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../assets/fonts/Roboto_Slab/RobotoSlab-Light.ttf) format("ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "josefin";
+  src: url(../assets/fonts/Josefin_Sans/JosefinSans-Light.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "openSans";
+  src: url(../assets/fonts/Open_Sans/OpenSans-Regular.ttf) format("ttf");
+  font-weight: normal;
+}
+
+
+img {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.geen {
+    box-shadow: none;
+    height: 26rem;
+    width: 26rem;
+}
+.logo{
+  margin-top: 10rem;
+}
+.alpha{
+  position: relative;
+  bottom: -3rem;
+}
+.logo1{
+  height: 23.4rem;
+  width: 23.4rem;
+}
+.logo2{
+  height: 23rem;
+  width: 23rem;
+}
+.logo3{
+  height: 22.7rem;
+  width: 22.7rem;
+}
+.logo4{
+  height: 21.8rem;
+  width: 21.8rem;
+}
+.logo:hover{
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+.logoLager{
+  margin: -5rem 0 0 0.3rem;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    width: 96rem;
+    margin: 0 auto;
+}
+
+.mainHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainHeader img {
+    margin-right: 9em;
+}
+
+.nav-list {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 8rem;
+    margin-right: 7rem;
+}
+
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+    margin: 2rem;
+    font-family: roboto, sans-serif;
+    font-size: 1.3rem;
+    padding-bottom: 0.5rem;
+}
+
+.rood {
+    color: #EB0000;
+}
+
+.geel {
+    color: #9F8B39;
+}
+
+.nav-link:hover{
+  border-bottom: solid 1px black;
+}
+.rood:hover{
+  border-bottom: solid 1px #EB0000;
+}
+.geel:hover{
+  border-bottom: solid 1px #9F8B39;
+}
+
+.work-a {
+    color: #000000;
+    text-decoration: none;
+    display: none;
+}
+
+
+/***************    MAIN    **************/
+
+
+.section-home {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.about {
+    width: 96rem;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-around;
+}
+
+.about-tekst {
+    width: 45rem;
+    text-align: left;
+    padding-top: 5rem;
+}
+.right{
+    text-align: right;
+}
+
+.about-tekst p{
+    margin: 6rem 4rem 0rem 4rem;
+    font-weight: lighter;
+    font-family: josefin, sans-serif;
+    font-size: 1.5rem;
+    line-height: 160%;
+}
+
+.work {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+
+.custom-test p {
+    width: 50rem;
+    line-height: 160%;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    font-family: josefin, sans-serif;
+    padding: 4rem 0 0 5.6rem;
+}
+
+.custom {
+    width: 96rem;
+    padding-top: 7rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.custom-foto {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.press {
+    width: 25rem;
+    padding-top: 10rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.press p:nth-of-type(even){
+  border-right: solid white 1px;
+  margin-left: 0.1rem;
+}
+.press p:nth-of-type(even):hover{
+  border-right: solid black 1px;
+}
+.press p:nth-of-type(odd){
+  border-left: solid white 1px;
+  margin-right: 0.1rem;
+}
+.press p:nth-of-type(odd):hover{
+  border-left: solid black 1px;
+}
+
+.press a {
+    line-height: 1.8;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    font-family: josefin, sans-serif;
+}
+
+.contact {
+    width: 40rem;
+    padding-top: 10rem;
+    line-height: 140%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-info h3 {
+    margin-bottom: 2rem;
+    font-weight: lighter;
+    font-family: josefin, sans-serif;
+    font-size: 1.8rem;
+}
+
+.contact-info p {
+    line-height: 2.5rem;
+    font-weight: lighter;
+    font-family: josefin, sans-serif;
+    font-size: 1.6rem;
+}
+
+
+/***************    WORK    **************/
+
+
+.maJapan {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.maJapan img {
+    margin-bottom: 3rem;
+}
+
+.titel-collec {
+    font-weight: normal;
+    font-family: openSans, sans-serif;
+    color: #817435;
+    width: 40rem;
+    padding-top: 10rem;
+    font-size: 5.8rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.japan p {
+    font-weight: lighter;
+    font-family: josefin, sans-serif;
+    line-height: 3rem;
+    font-size: 2.3rem;
+    text-align: center;
+    padding-top: 18rem;
+    padding-bottom: 10rem;
+}
+
+.print p {
+    font-weight: lighter;
+    font-family: josefin, sans-serif;
+    line-height: 3rem;
+    font-size: 2.3rem;
+    text-align: center;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+    padding-left: 2rem;
+}
+
+.fSpan{
+  font-weight: bolder;
+}
+.sSpan{
+  text-decoration: underline;
+}
+
+.enlight{
+  width: 60%;
+}
+
+.light p {
+    font-weight: lighter;
+    font-family: josefin, sans-serif;
+    width: 60rem;
+    font-size: 1.7rem;
+    line-height: 140%;
+    text-align: left;
+    padding: 11rem 0 7rem 3rem;
+}
+
+.hero p {
+  font-weight: lighter;
+  font-family: josefin, sans-serif;
+  width: 30rem;
+  font-size: 1.7rem;
+  line-height: 140%;
+  text-align: right;
+  padding: 11rem 0 10rem 3rem;
+  margin-left: 60rem;
+}
+
+.resize{
+  width: 100%;
+  height: 100%;
+  margin: 1.5rem;
+}
+
+.resizeHero{
+  width: 60%;
+  height: 60%;
+  margin: 1.5rem;
+}
+.resizeHero_small{
+  width: 30%;
+  height: 30%;
+  margin: 1.5rem;
+}
+.verplaatsenHero{
+  align-self: center;
+}
+
+.verzamelPics{
+  width: 50%;
+  height: 30%;
+  margin: 0 auto;
+}
+
+.resize-hover:hover .test {
+  transform: scale(2);
+  transition: 0.4s;
+  cursor: pointer;
+  z-index: 1;
+}
+.hero-collec{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 60rem;
+  margin: 0 auto;
+}
+
+#extraHoog{
+  top: -56rem;
+}
+
+#extraMedium{
+  top: -45rem;
+}
+
+.firstPlaatsing{
+  position: relative;
+  z-index: 0;
+  margin: 3rem;
+  left: -3.1rem;
+}
+.plaatsing{
+  position: relative;
+  z-index: -1;
+  top: -36.8rem;
+  margin: 3rem;
+  width: 120%;
+  height: 120%;
+  left: -8rem;
+}
+
+.centering{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 96rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hero-collec{
+  width: 96rem;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+
+.footerpos{
+  margin: -20rem 0 0 0;
+}
+
+.maPrint {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.maPrint img {
+    margin-bottom: 5rem;
+    width: 30%;
+    height: 30%;
+}
+
+.print header p{
+  width: 30rem;
+  margin: 0 auto;
+  text-align: left;
+}
+/**************   footer    **************/
+
+footer {
+    text-align: center;
+    margin-top: 15rem;
+}
+
+footer a {
+    color: #000000;
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin: 3rem;
+    padding-bottom: 3rem;
+    font-weight: 400;
+    font-family: josefin, sans-serif;
+    padding-top: 0.5rem;
+}
+
+footer a:hover{
+  border-top: solid 1px black;
+}
