@@ -8,6 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/mediaelement/latest/mediaelement-and-player.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/mediaelement/latest/mediaelementplayer.css" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css">
   <title>Maaike | Fashion Designer</title>
 </head>
@@ -35,6 +38,14 @@
       </div>
     </header>
     <main>
+      <section class="section-video">
+        <p>FashionWeek Amsterdam - Catwalk</p>
+        <video id="video" class="mejs__player" style="max-width:100%;" poster="/img/poster.jpg">
+          <source type="video/webm" src="video/video.webm" />
+          <source type="video/mp4" src="video/video.m4v" />
+          <source type="video/ogg" src="video/video.ogg" />
+        </video>
+      </section>
       <section class="section-home">
         <div class="row">
           <div class="one-third column">
@@ -59,7 +70,7 @@
           <a class="footer__link" href="https://www.linkedin.com/in/maaike-van-den-abbeele-9a769a5b?trk=nav_responsive_tab_profile_pic" target="_blank">Linkedin</a>
         </div>
         <div class="one-third column">
-          <a class="footer__link" href="https://www.instagram.com/maaikevandenabbeele/" target="_blank">Instagram</a>
+          <a class="footer__link" href="https://www.instagram.com/vandenabbeelemaaike/" target="_blank">Instagram</a>
         </div>
       </div>
     </footer>

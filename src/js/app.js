@@ -5,7 +5,7 @@ const body = document.querySelector('.body');
 const header = document.querySelector('.header');
 const navContainer = document.querySelector('.nav__container');
 const form = document.querySelector('.form');
-
+const video = document.getElementById('video');
 
 //
 //  Mobile & Desktop menu animation
