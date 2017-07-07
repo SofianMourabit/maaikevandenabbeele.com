@@ -1,0 +1,8 @@
+.myjapan{
+  @include e(heading){
+    @extend %heading;
+  }
+  @include e(text){
+    @extend %text;
+  }
+}

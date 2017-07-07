@@ -1,0 +1,11 @@
+.myenlightment{
+  @include e(image){
+    padding: 1em 0;
+  }
+  @include e(heading){
+    @extend %heading;
+  }
+  @include e(text){
+    @extend %text;
+  }
+}

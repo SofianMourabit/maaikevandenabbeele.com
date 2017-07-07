@@ -1,0 +1,90 @@
+.form{
+  flex: 1 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  padding-top: 3.5em;
+  @include mq(medium){
+    flex-direction: row;
+    width: 80%;
+  }
+  @include e(fieldset){
+    padding-top: 4.4em;
+    padding-right: 2em;
+    border:none;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    @include m(button){
+      flex: 1 100%;
+      margin-top: .5em;
+    }
+  }
+  @include e(label){
+    top: 15px;
+    font-size: 2em;
+    position: absolute;
+    @extend %transition;
+  }
+  @include e(input){
+    color:$color-accent;
+    border-bottom: 1px solid #d5d5d5;
+    width: 100%;
+    font-size: 1.7em;
+    padding-right: em(16px);
+    padding-bottom: em(16px);
+    font-weight: $font-weight--light;
+    @extend %transition;
+    &:focus{
+      border-bottom-color: $red;
+    }
+    @include m(textarea){
+      color:$color-accent;
+      font-weight: $font-weight--light;
+      border-bottom: 1px solid #d5d5d5;
+      font-size: 2em;
+      width: 100%;
+      @extend %transition;
+      height: 220px;
+      &:focus{
+        border-bottom-color: $red;
+      }
+    }
+  }
+  @include e(button){
+    @extend %form__button;
+    padding: 15px 30px;
+    @extend %transition;
+    &:hover{
+      opacity: .9;
+      box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+    @include m(disabled){
+      @extend %form__button;
+      padding: 2px 30px 1px 29px;
+      opacity: .4;
+    }
+  }
+  @include e(left){
+    flex: 1 100%;
+    @include mq(medium){
+      flex: 1 35%;
+    }
+
+  }
+  @include e(right){
+    flex: 1 100%;
+    @include mq(medium){
+      flex: 1 65%;
+    }
+  }
+  @include e(icon){
+    width: 40px;
+    height: 40px;
+    fill: $red;
+  }
+
+}

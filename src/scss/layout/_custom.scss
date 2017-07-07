@@ -1,0 +1,9 @@
+.custom{
+  padding-top: 2em;
+  @include e(heading){
+    @extend %heading;
+  }
+  @include e(text){
+    @extend %text;
+  }
+}

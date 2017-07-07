@@ -1,0 +1,12 @@
+.hero{
+  padding-top: 2em; 
+  @include e(image){
+    padding: 1em;
+  }
+  @include e(heading){
+    @extend %heading;
+  }
+  @include e(text){
+    @extend %text;
+  }
+}

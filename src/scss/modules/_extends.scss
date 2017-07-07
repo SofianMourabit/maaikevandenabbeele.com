@@ -5,8 +5,8 @@ Helper classes
 	left: -80%;
 }
 .push__up{
-	top: 5px;
-	opacity: .5;
+	top: -10px;
+	opacity: .7;
 }
 .is__hidden{
 	opacity: 0;
@@ -30,10 +30,29 @@ Helper classes
 }
 %heading{
 	font-weight: normal;
-	font-family: $font-family--heading;
+	font-family: $font-family--secondary	;
 	color: $sycamore;
 	padding: 3rem 0;
 	font-size: 3rem;
 	text-align: center;
+	font-weight: 200;
 	margin: 0 auto;
+}
+%text{
+	  font-size: 2rem;
+	  line-height: 3rem;
+	  font-weight: $font-weight--light;
+}
+%form__button{
+	border: none;
+	float: right;
+	margin-bottom: em(22px);
+	margin-top: em(22px);
+	border-radius: 0.4em;
+	box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.2);
+	color: $white;
+	background-color: $color-primary;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	font-weight: 400;
 }

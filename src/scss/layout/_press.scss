@@ -1,0 +1,35 @@
+.press{
+  padding-top: 2em;
+  @include e(heading){
+    @extend %heading;
+  }
+  @include e(text){
+    @extend %text;
+    &:nth-of-type(odd):hover {
+      border-left: solid $red 1px;
+    }
+    &:nth-of-type(even):hover {
+      border-right: solid $red 1px;
+    }
+  }
+  @include e(link){
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+// .press p:nth-of-type(even){
+//   border-right: solid white 1px;
+//   margin-left: 0.1rem;
+// }
+// .press p:nth-of-type(even):hover{
+//   border-right: solid black 1px;
+// }
+// .press p:nth-of-type(odd){
+//   border-left: solid white 1px;
+//   margin-right: 0.1rem;
+// }
+// .press p:nth-of-type(odd):hover{
+//   border-left: solid black 1px;
+// }

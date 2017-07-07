@@ -1,0 +1,17 @@
+.home{
+  padding-top: 4em;
+  @include e(image){
+    padding: 1em;
+  }
+  @include e(heading){
+    @extend %heading;
+  }
+  @include e(text){
+    @extend %text;
+  }
+  @include e(link){
+    &:hover {
+      color: $red;
+    }
+  }
+}

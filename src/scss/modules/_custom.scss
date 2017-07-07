@@ -6,4 +6,12 @@
       }
     }
   }
+  @include e(contact){
+    font-weight: $font-weight--medium;
+    font-family: $font-family--primary;
+    font-size: em(12px);
+    &:hover{
+      color: $red;
+    }
+  }
 }
