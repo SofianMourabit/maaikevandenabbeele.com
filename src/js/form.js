@@ -92,11 +92,11 @@ function handleFormSubmit(event) {
     if (xhr.readyState === xhr.DONE) {
       if (xhr.status === 200) {
         form.style.display = 'none';
-        document.querySelector('.contact__title').innerHTML= 'Message Sent!';
-        document.querySelector('.contact__text').innerHTML= 'Thank you for getting in touch. I will get back to you shortly.';
+        document.querySelector('#contact__title').innerHTML= 'Message Sent!';
+        document.querySelector('#contact__text').innerHTML= 'Thank you for getting in touch. I will get back to you shortly.';
         const contact = document.querySelector('.contact');
-        const checkImage = `<div class="contact__check">
-        <svg class="skill__icon">
+        const checkImage = `<div class="form__check">
+        <svg class="form__icon--big">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite/sprite.svg#svg--check"></use>
         </svg>
       </div>`;
