@@ -19,7 +19,7 @@
   }
   @include e(container){
     @extend %transition;
-    margin-top: 10rem;
+    margin-top: 6rem;
     @include mq(large){
       display: flex;
     }

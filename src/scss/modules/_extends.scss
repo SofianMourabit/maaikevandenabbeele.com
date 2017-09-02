@@ -17,7 +17,13 @@ Helper classes
 .is__sticky{
 	height: 60px;
 	background-color: $white;
-	border-bottom: 1px solid darken($color-secondary, 5%);
+}
+.logo__small{
+	width: 3em;
+	margin-top: 1em;
+}
+.sticky{
+	margin-top: 0;
 }
 
 %link{
@@ -40,9 +46,9 @@ Helper classes
 	display: block;
 }
 %text{
-	  font-size: 2rem;
-	  line-height: 3rem;
-	  font-weight: $font-weight--light;
+	font-size: 2rem;
+	line-height: 3rem;
+	font-weight: $font-weight--light;
 }
 %form__button{
 	border: none;
