@@ -3,9 +3,9 @@
   background-color: darken($white, 2%);
   border-left: 1px solid darken($white, 4%);
   height: 100%;
-  width: 80%;
+  width: 60%;
   top: 0;
-  right: -80%;
+  left: -80%;
   @extend %transition;
   @include mq(large){
     top: auto;
@@ -27,6 +27,12 @@
   @include e(item){
     width: 100%;
     text-align: center;
+  }
+  @include e(center){
+    margin-left: -2em;
+    @include mq(large){
+      margin-left: 0;
+    }
   }
   @include e(link){
     @extend %link;
